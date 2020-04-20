@@ -1,0 +1,22 @@
+<% include ./header %>
+<div class="a" style=".body{
+  background-color:aqua;
+}">
+<div><h1>ADD NEWPOST</h1>
+<%=blog.title %>
+<div class="ui piled segment">
+    <h4 class="ui header">A header</h4>
+<img src="<%= blog.image %>" ><br>
+<span><%= blog.created.toDateString() %></span>
+<div class="discription">
+<p><%=blog.body %></p>
+</div>
+<button><a href="/blogs/<%= blog.id %>/edit" class="button">EDIT</a></button>
+<form action="/blogs/<%= blog.id %>?_method=DELETE" method="POST" style="display: inline;">
+<button>DELETE</button>
+</form>
+</div>
+</div>
+</div>
+
+  <% include ./footer %>

@@ -1,0 +1,21 @@
+<% include ./header %>
+<div><h1>ADD NEWPOST</h1></div>
+
+<form class="ui form" method="POST" action="/blogs" style="background-image: url(https://wallpapercave.com/wp/mRZrhq9.jpg);">
+    <div class="field">
+      <label>TITLE</label>
+      <input type="text" name="blog[title]" placeholder="title">
+    </div>
+    <div class="field">
+      <label>image</label>
+      <input type="text" name="blog[image]" placeholder="image">
+    </div>
+    <div class="field">
+        <label>body</label>
+        <input type="text" name="blog[body]" placeholder="text">
+      </div>
+ 
+    </div>
+    <input class="ui button" type="submit">Submit</button>
+  </form>
+  <% include ./footer %>

@@ -1,0 +1,17 @@
+body {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    /*background: url('./contact-form/bg.png') center center fixed no-repeat;*/
+}
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    font-size: 20px;
+}
+

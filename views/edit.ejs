@@ -1,0 +1,21 @@
+<% include ./header %>
+<div><h1 style="text-align: center;font-family: 'Times New Roman', Times, serif;">EDIT <%=blog.title %></h1></div>
+
+<form class="ui form"  action="/blogs/<%= blog._id %>?_method=PUT" method="POST" style="background-image: url(https://wallpapercave.com/wp/mRZrhq9.jpg);">
+    <div class="field">
+      <label style="color: azure;" >Title</label>
+      <input type="text" name="blog[title]" value="<%= blog.title %>">
+    </div>
+    <div class="field">
+      <label style="color: azure;">Image Url</label>
+      <input type="text" name="blog[image]" value="<%= blog.image %>">
+    </div>
+    <div class="field">
+        <label style="color: azure;">Body</label>
+        <input type="text" name="blog[body]" value="<%= blog.body %>">
+      </div>
+ 
+    </div>
+    <input class="ui button" type="submit" style="margin-top: 100px; margin-left:600px;"></button>
+  </form>
+  <% include ./footer %>
